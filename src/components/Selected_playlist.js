@@ -63,7 +63,7 @@ export default function Selected_playlist() {
       const xday = xdate.getUTCDate();
       const ydate1 = new Date(e);
       const yday1 = ydate1.getUTCDate();
-      const formatted_date2 = xday - yday1 + " " + "days" + " " + "ago";
+      const formatted_date2 =  yday1 + " " + "days" + " " + "ago";
       return formatted_date2;
     }
   };
@@ -106,7 +106,7 @@ export default function Selected_playlist() {
             </div>
             <div className="ml-6 ">
               <div className="text-sm font-semibold mt-3 ">{selectedPlaylist.type.charAt(0).toUpperCase() + selectedPlaylist.type.slice(1)}</div>
-              <div className="text-[5rem]  mb-5 font-extrabold">{selectedPlaylist.name}</div>
+              <div className="text-[4rem]  mb-5 font-extrabold">{selectedPlaylist.name}</div>
               <div className="text-base  mb-2 text-[#B3B3B3] font-medium">{selectedPlaylist.desc}</div>
               <div className="flex  text-sm ">
                 <img className=" rounded-full  mr-1 h-6" src={userInfo.userPic} alt="" />

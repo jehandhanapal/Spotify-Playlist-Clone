@@ -25,6 +25,13 @@ export default function Login() {
     <Container>
       <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_Black.png" alt="spotify" />
       <button onClick={handleclick}>Connect to Spotify</button>
+      <div>
+        <p>You can login using the below credentials</p>
+        <p>User name : jeganjs23@gmail.com</p>
+        <p>Password : jehanspotify02</p>
+        <p>Note:- You need to open a original spotify website with same account in another tab to access player controls</p>
+      </div>
+
     </Container>
   );
 }
@@ -38,6 +45,17 @@ const Container = styled.div`
   width: 100vw;
   height: 100vh;
   gap: 4rem;
+
+  div{
+    width: 25vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    border: 2px solid;
+    padding: 1rem;
+  }
 
   img {
     height: 20vh;
